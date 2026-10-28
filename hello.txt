@@ -1,0 +1,4 @@
+Jenkins.instance.getAllItems(Job.class).each { job ->
+    println "Deleting: ${job.name}"
+    job.delete()
+}
